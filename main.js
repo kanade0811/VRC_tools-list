@@ -34,25 +34,16 @@ for (const category of categories) {
     for (const article of category.articles) {
 
         // 目次リンク
-        // タグを認識させる
         const link = document.createElement("a");
-        // リンクを繋げる
         link.href = `#${article.file}`;
-        // リンクのタイトルを設定
         link.textContent = article.title;
-        // tocに追加
         toc.appendChild(link);
 
         // 記事読み込み
-        // 記事内容を受け取る
         const md = await fetch(article.file).then(r => r.text());
-        // セクションタグを追加
         const section = document.createElement("section");
-        // id付け
         section.id = article.file;
-        // 中身を設定
         section.innerHTML = marked.parse(md);
-        // contentに追加
         content.appendChild(section);
     }
 }
