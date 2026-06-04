@@ -1,0 +1,75 @@
+/* 全体 */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  margin: 0;
+  background: #f6f7f9;
+  color: #222;
+
+  display: flex; /* ← 重要 */
+}
+
+/* 目次（左カラム） */
+#toc {
+  width: 240px;
+  height: 100vh;
+  overflow-y: auto;
+  background: #111827;
+  padding: 16px;
+
+  position: sticky; /* ← fixedじゃなくてstickyの方が自然 */
+  top: 0;
+}
+
+#toc a {
+  display: block;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+#toc a:hover {
+  color: white;
+}
+
+/* 本文（右カラム） */
+#content {
+  flex: 1;              /* ← 残り全部使う */
+  padding: 24px;
+  max-width: 900px;
+  margin: 0 auto;      /* ← 中央寄せしたい場合 */
+}
+
+/* 見出し */
+h1 {
+  font-size: 24px;
+  margin-top: 48px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 6px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 36px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+h3 {
+  font-size: 16px;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+/* Markdown本文 */
+section {
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* リンク */
+a {
+  color: #2563eb;
+}
