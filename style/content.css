@@ -5,38 +5,34 @@
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-}
 
-/* 見出し */
-#content h1 {
-  font-size: 24px;
-  border-bottom: 2px solid #ddd;
-}
+  h1 {
+    font-size: 24px;
+    border-bottom: 2px solid #ddd;
+  }
 
-#content h2 {
-  font-size: 16px;
-  margin-top: 10px;
-  border-bottom: 1px solid #ddd;
-}
+  h2 {
+    font-size: 16px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+  }
 
-#content h6 {
-  font-size: 12px;
-  font-weight: 500;
-  margin-top: 10px;
-  margin-bottom: 4px;
-  text-align: right;
-  color: #666;
-}
+  h3 {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    text-align: right;
+    color: #666;
+  }
 
+  section {
+    line-height: 1.7;
+    font-size: 15px;
+  }
 
-/* Markdown本文 */
-#content section {
-  line-height: 1.7;
-  font-size: 15px;
-}
-
-/* リンク */
-#content a {
-  margin: 0;
-  color: #2563eb;
+  a {
+    margin: 0;
+    color: #2563eb;
+  }
 }
