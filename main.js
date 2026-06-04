@@ -24,14 +24,10 @@ for (const category of categories) {
     h2.textContent = category.name;
     content.appendChild(h2);
 
-    // 左：カテゴリ見出しも追加
+    // 左：カテゴリ見出し
     const tocCategory = document.createElement("div");
     tocCategory.textContent = category.name;
-    tocCategory.style.color = "#9ca3af";
-    tocCategory.style.fontSize = "12px";
-    tocCategory.style.marginTop = "16px";
-    tocCategory.style.marginBottom = "6px";
-    tocCategory.style.letterSpacing = "0.05em";
+    tocCategory.classList.add("toc-category");
     toc.appendChild(tocCategory);
 
     // カテゴリ内の記事ごとの動作

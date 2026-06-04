@@ -20,6 +20,17 @@ body {
   top: 0;
 }
 
+/* 目次カテゴリ見出し */
+.toc-category {
+  color: #9ca3af;
+  font-size: 12px;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 #toc a {
   display: block;
   color: #e5e7eb;
