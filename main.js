@@ -6,7 +6,7 @@ marked.setOptions({
 });
 
 // タグを認識させる
-const toc = document.getElementById("toc");
+const sidebar = document.getElementById("sidebar");
 const content = document.getElementById("content");
 
 // 記事をロードする関数
@@ -25,10 +25,10 @@ for (const category of categories) {
     content.appendChild(h2);
 
     // 左：カテゴリ見出し
-    const tocCategory = document.createElement("div");
-    tocCategory.textContent = category.name;
-    tocCategory.classList.add("toc-category");
-    toc.appendChild(tocCategory);
+    const sidebarCategory = document.createElement("div");
+    sidebarCategory.textContent = category.name;
+    sidebarCategory.classList.add("sidebar-category");
+    sidebar.appendChild(sidebarCategory);
 
     // カテゴリ内の記事ごとの動作
     for (const article of category.articles) {
@@ -37,7 +37,7 @@ for (const category of categories) {
         const link = document.createElement("a");
         link.href = `#${article.file}`;
         link.textContent = article.title;
-        toc.appendChild(link);
+        sidebar.appendChild(link);
 
         // 記事読み込み
         const md = await fetch(article.file).then(r => r.text());

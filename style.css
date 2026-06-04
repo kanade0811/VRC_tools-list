@@ -5,7 +5,7 @@ body {
 }
 
 /* 目次　*/
-#toc {
+#sidebar {
   width: 30vh;
   height: 100vh;
   background: #111827;
@@ -14,21 +14,21 @@ body {
 }
 
 /* 目次カテゴリ見出し */
-.toc-category {
+.sidebar-category {
   color: #9ca3af;
   font-size: 12px;
   margin-top: 16px;
   margin-bottom: 6px;
 }
 
-#toc a {
+#sidebar a {
   color: #e5e7eb;
   text-decoration: none;
   font-size: 14px;
   margin: 6px 0;
 }
 
-#toc a:hover {
+#sidebar a:hover {
   color: white;
 }
 
