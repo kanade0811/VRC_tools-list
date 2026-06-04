@@ -1,4 +1,4 @@
-import useful from "./datas/useful.js";
+import categories from "./datas/!categories.js";
 
 marked.setOptions({
   breaks: true
@@ -13,26 +13,30 @@ async function loadArticle(path) {
   return await response.text();
 }
 
-for (const article of useful) {
-  // 目次生成
-  const link = document.createElement("a");
+for (const category of categories) {
 
-  link.href = `#${article.file}`;
+    // カテゴリ見出し
+    const h2 = document.createElement("h2");
+    h2.textContent = category.name;
+    content.appendChild(h2);
 
-  link.textContent = article.title;
+    for (const article of category.articles) {
 
-  toc.appendChild(link);
+        // 目次
+        const link = document.createElement("a");
+        link.href = `#${article.file}`;
+        link.textContent = article.title;
 
-  toc.appendChild(document.createElement("br"));
+        toc.appendChild(link);
+        toc.appendChild(document.createElement("br"));
 
-  // 記事読み込み
-  const md = await loadArticle(article.file);
+        // 記事読み込み
+        const md = await fetch(article.file).then(r => r.text());
 
-  const section = document.createElement("section");
+        const section = document.createElement("section");
+        section.id = article.file;
+        section.innerHTML = marked.parse(md);
 
-  section.id = article.file;
-
-  section.innerHTML = marked.parse(md);
-
-  content.appendChild(section);
+        content.appendChild(section);
+    }
 }
