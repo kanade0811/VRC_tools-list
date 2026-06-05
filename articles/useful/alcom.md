@@ -1,5 +1,5 @@
 # ALCOM
-[https://vrc-get.anatawa12.com/ja/alcom/](https://vrc-get.anatawa12.com/ja/alcom/)
+[DLリンク](https://vrc-get.anatawa12.com/ja/alcom/)
 ### 作成者：奏
 
 ## ここが良い
@@ -10,3 +10,6 @@
 ## 使用方法
 リンクからDL
 あとはノリで
+
+### 記事作成日時：2026/06/04
+### 記事作成日時：2026/06/05

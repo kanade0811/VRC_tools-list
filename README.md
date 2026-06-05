@@ -5,7 +5,7 @@ https://kanade0811.github.io/VRC_tools-list/
 
 追加したいものがあればプルリクどうぞ  
 問題があればissueでお知らせください  
-オマージュ元
+オマージュ元  
 https://github.com/sakura-cooking/takoyaki
 
 ### How to Write
