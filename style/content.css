@@ -6,7 +6,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  p{
+  p {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -25,6 +25,8 @@
   h3 {
     font-size: 12px;
     font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
     text-align: right;
     color: #666;
   }
