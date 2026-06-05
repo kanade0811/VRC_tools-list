@@ -16,3 +16,5 @@
 1. アバター選択の変換先アバターを適切に設定
 1. Execute Retargetingを押して実行
 1. Assets/OutfitRetargetingSystem/Outputs内のprefabをアバター直下にD&D
+
+### 記事作成日時：2026/06/04

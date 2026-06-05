@@ -9,4 +9,12 @@ export default [
     title: "もちふぃった～",
     file: PATH + "MochiFitter.md",
   },
+  {
+    title: "可愛いポーズツール",
+    file: PATH + "KawaiiPose.md",
+  },
+  {
+    title: "VRCQuestTools",
+    file: PATH + "VRCQuestTools.md",
+  },
 ];
